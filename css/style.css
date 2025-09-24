@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
+
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -24,12 +25,24 @@
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9600', endColorstr='#1bb8f9',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9600', endColorstr='#1bb8f9', GradientType=0);
   /* IE6-9 */
+
+}
+
+
+.speaker_thumb img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  /* Fit inside the box, may leave empty space */
+  display: block;
 }
 
 /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
-.event_area .double_line::before, .event_area .double_line::after {
+.double_line::before,
+.double_line::after {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
   background: #ff9600;
   /* Old browsers */
@@ -39,7 +52,7 @@
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9600', endColorstr='#1bb8f9',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9600', endColorstr='#1bb8f9', GradientType=1);
   /* IE6-9 */
 }
 
@@ -81,7 +94,8 @@ a,
 
 /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 a:focus,
-.button:focus, button:focus {
+.button:focus,
+button:focus {
   text-decoration: none;
   outline: none;
 }
@@ -109,7 +123,11 @@ button {
 }
 
 /* line 44, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Poppins", sans-serif;
   color: #131313;
 }
@@ -356,6 +374,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 244, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
   .seperator {
     margin-top: 15px;
@@ -364,6 +383,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 244, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
   .seperator {
     margin-top: 15px;
@@ -377,6 +397,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 262, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
   .mb-95 {
     margin-bottom: 30px;
@@ -389,6 +410,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 269, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
   .mb-80 {
     margin-bottom: 30px;
@@ -401,6 +423,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 275, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
   .mb-60 {
     margin-bottom: 30px;
@@ -520,6 +543,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 73, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
   .boxed-btn-white {
     padding: 14px 20px;
@@ -556,6 +580,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 2, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title .sub_heading {
     margin-bottom: 10px;
@@ -574,6 +599,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title .sub_heading2 {
     margin-bottom: 5px;
@@ -589,6 +615,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 27, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title h3 {
     font-size: 26px;
@@ -597,6 +624,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 27, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title h3 {
     font-size: 25px;
@@ -612,6 +640,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title.padding-right {
     padding-right: 0;
@@ -619,6 +648,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title.padding-right {
     padding-right: 0;
@@ -626,6 +656,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .section_title.padding-right {
     padding-right: 0;
@@ -642,6 +673,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 57, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .serction_title_large h3 {
     font-size: 35px;
@@ -649,6 +681,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 57, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .serction_title_large h3 {
     font-size: 45px;
@@ -656,6 +689,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 57, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .serction_title_large h3 {
     font-size: 60px;
@@ -676,6 +710,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
   .serction_title_large h3::before {
     width: 80px;
@@ -685,6 +720,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
   .mobile_menu {
     position: absolute;
@@ -723,6 +759,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 35, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
   .slicknav_menu .slicknav_nav a i {
     display: none;
@@ -730,6 +767,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 35, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
   .slicknav_menu .slicknav_nav a i {
     display: none;
@@ -761,6 +799,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 12, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
   .slicknav_menu {
     margin-right: 12px;
@@ -810,6 +849,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 10px 0;
@@ -817,6 +857,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 10px 0;
@@ -824,6 +865,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 0 50px;
@@ -831,6 +873,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img {
     padding-left: 20px;
@@ -838,6 +881,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img {
     padding-left: 20px;
@@ -845,6 +889,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img img {
     width: 100px;
@@ -852,6 +897,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img img {
     width: 120px;
@@ -859,6 +905,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img img {
     width: 120px;
@@ -890,6 +937,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
     padding: 35px 8px 35px 8px;
@@ -897,6 +945,7 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+
   /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
     padding: 35px 8px 35px 8px;
@@ -909,6 +958,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 61, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a i {
     display: none !important;
@@ -916,6 +966,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 61, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a i {
     display: none !important;
@@ -978,14 +1029,14 @@ h3 {
 }
 
 /* line 128, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
-.header-area .main-header-area .main-menu ul li:hover > .submenu {
+.header-area .main-header-area .main-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
   top: 100%;
 }
 
 /* line 133, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
-.header-area .main-header-area .main-menu ul li:hover > a::before {
+.header-area .main-header-area .main-menu ul li:hover>a::before {
   opacity: 1;
   transform: scaleX(1);
 }
@@ -1008,6 +1059,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 140, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 10px 0;
@@ -1015,6 +1067,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 140, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 10px 0;
@@ -1022,6 +1075,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 140, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 0 50px;
@@ -1029,6 +1083,7 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+
   /* line 140, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 0 50px;
@@ -1053,6 +1108,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 174, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
   .header-area .buy_ticket a {
     padding: 10px 20px;
@@ -1061,19 +1117,20 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner_1.png);
+  background-image: url(../img/banner2.png);
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area {
   background-size: cover;
-  background-position: center  center;
+  background-position: center center;
   background-repeat: no-repeat;
   padding-top: 300px;
   padding-bottom: 100px;
 }
 
 @media (max-width: 767px) {
+
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area {
     padding-top: 140px;
@@ -1082,6 +1139,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area {
     padding-top: 140px;
@@ -1103,6 +1161,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 22, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text {
     margin-bottom: 30px;
@@ -1110,6 +1169,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 22, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text {
     margin-bottom: 30px;
@@ -1117,6 +1177,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 22, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text {
     margin-bottom: 30px;
@@ -1130,6 +1191,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text.title_text2 {
     margin-bottom: 0;
@@ -1158,6 +1220,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text.title_text2:after {
     display: none;
@@ -1165,6 +1228,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text.title_text2:after {
     display: none;
@@ -1172,6 +1236,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text.title_text2:after {
     display: none;
@@ -1179,6 +1244,7 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+
   /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text.title_text2:after {
     display: none;
@@ -1201,6 +1267,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text::before {
     display: none;
@@ -1208,6 +1275,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text::before {
     display: none;
@@ -1215,6 +1283,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text::before {
     display: none;
@@ -1222,6 +1291,7 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+
   /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text::before {
     display: none;
@@ -1239,6 +1309,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text h3 {
     font-size: 36px;
@@ -1248,6 +1319,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text h3 {
     font-size: 46px;
@@ -1257,6 +1329,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .title_text h3 {
     font-size: 60px;
@@ -1273,6 +1346,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .single_date {
     margin-bottom: 15px;
@@ -1295,6 +1369,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time {
     margin-top: 40px;
@@ -1303,6 +1378,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time {
     text-align: left;
@@ -1310,6 +1386,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time {
     text-align: left;
@@ -1324,6 +1401,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time .single_countdown {
     margin-right: 10px;
@@ -1332,6 +1410,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time .single_countdown {
     margin-right: 10px;
@@ -1347,6 +1426,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time .single_countdown h3 {
     font-size: 20px;
@@ -1377,6 +1457,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 178, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .opcity_text {
     font-size: 90px;
@@ -1405,6 +1486,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 10, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area .shape-2 {
     bottom: 3%;
@@ -1412,6 +1494,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area {
     padding-top: 40px;
@@ -1420,6 +1503,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area {
     padding-top: 100px;
@@ -1461,6 +1545,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area .about_thumb .exprience h1 {
     font-size: 30px;
@@ -1477,6 +1562,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 61, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area .about_info {
     margin-top: 30px;
@@ -1501,6 +1587,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 68, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area .about_info .about_list li {
     font-size: 14px;
@@ -1532,6 +1619,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 93, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area .about_info p {
     margin-bottom: 30px;
@@ -1556,6 +1644,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 114, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .dream_service.extra_padding2 {
     padding-top: 30px;
@@ -1564,6 +1653,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 114, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .dream_service.extra_padding2 {
     padding-top: 100px;
@@ -1572,6 +1662,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 111, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .dream_service {
     padding-top: 30px;
@@ -1585,6 +1676,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 130, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .dream_service .single_dream {
     margin-bottom: 30px;
@@ -1592,6 +1684,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 130, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .dream_service .single_dream {
     padding: 0 10px;
@@ -1599,6 +1692,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 139, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .dream_service .single_dream .thumb img {
     width: 100%;
@@ -1647,6 +1741,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 166, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .youtube_video_area .youtube_video {
     height: 400px;
@@ -1685,6 +1780,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 5, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
   .speakers_area.inc_padd {
     padding-bottom: 0px;
@@ -1693,6 +1789,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 5, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
   .speakers_area.inc_padd {
     padding-bottom: 100px;
@@ -1701,6 +1798,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
   .speakers_area {
     padding-bottom: 0px;
@@ -1719,6 +1817,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 20, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
   .speakers_area .horizontal_text {
     font-size: 90px;
@@ -1727,8 +1826,11 @@ h3 {
 
 /* line 31, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area .single_speaker {
-  margin-bottom: 90px;
+
   overflow: hidden;
+  margin-bottom: 8px;
+  /* reduce space between speakers */
+  padding-bottom: 4px;
 }
 
 /* line 34, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
@@ -1840,11 +1942,12 @@ h3 {
 .resister_book {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center  center;
+  background-position: center center;
   padding: 184px 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
   .resister_book {
     padding: 80px 0;
@@ -1861,6 +1964,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 13, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
   .resister_book .resister_text h3 {
     font-size: 30px;
@@ -1869,6 +1973,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
   .resister_book .resister_text h3 br {
     display: none;
@@ -1887,6 +1992,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 34, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
   .brand_area {
     padding: 40px 0;
@@ -1922,6 +2028,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area {
     padding-top: 60px;
@@ -1935,6 +2042,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area .accordion_heading {
     margin-bottom: 30px;
@@ -1942,6 +2050,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area .accordion_heading {
     margin-bottom: 30px;
@@ -1956,6 +2065,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 16, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area .accordion_heading h3 {
     font-size: 28px;
@@ -1970,6 +2080,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area #accordion .card h5 button {
     font-size: 13px;
@@ -1977,6 +2088,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area #accordion .card h5 button {
     font-size: 18px;
@@ -1994,6 +2106,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area #accordion .card .card-body {
     padding: 0 20px 10px 20px;
@@ -2025,6 +2138,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 54, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area #accordion .card {
     margin-bottom: 10px;
@@ -2040,6 +2154,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 83, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
   .faq_area #accordion .card .card-header span {
     display: none;
@@ -2047,7 +2162,8 @@ h3 {
 }
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_faq.scss */
-.faq_area .btn-link.focus, .faq_area .btn-link:focus {
+.faq_area .btn-link.focus,
+.faq_area .btn-link:focus {
   text-decoration: none;
   border-color: transparent;
   box-shadow: none;
@@ -2068,10 +2184,17 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area {
     padding-bottom: 60px;
   }
+}
+
+.section-title {
+  font-size: 2rem;
+  /* ~32px */
+  font-style: normal;
 }
 
 /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
@@ -2080,6 +2203,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area.plus_padding {
     margin-top: 60px;
@@ -2087,6 +2211,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 8, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area.plus_padding {
     margin-top: 60px;
@@ -2097,7 +2222,7 @@ h3 {
 .event_area .vr_text {
   font-size: 120px;
   font-weight: 700;
-  color: #F3F3F3;
+  color: #f3f3f3;
   writing-mode: vertical-lr;
   position: absolute;
   left: 17%;
@@ -2109,6 +2234,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area .vr_text {
     left: 2%;
@@ -2116,7 +2242,7 @@ h3 {
 }
 
 /* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
-.event_area .double_line {
+.double_line {
   position: relative;
   z-index: 9;
   padding-top: 100px;
@@ -2125,15 +2251,15 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 30, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
-  .event_area .double_line {
+  .double_line {
     padding-top: 40px;
     margin-bottom: 20px;
   }
 }
 
-/* line 40, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
-.event_area .double_line::before {
+.double_line::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -2143,7 +2269,7 @@ h3 {
 }
 
 /* line 49, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
-.event_area .double_line::after {
+.double_line::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -2160,6 +2286,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 60, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area .date h3 {
     margin-bottom: 20px;
@@ -2167,6 +2294,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 60, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area .date h3 {
     margin-bottom: 30px;
@@ -2179,6 +2307,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area .single_speaker {
     margin-bottom: 30px;
@@ -2191,6 +2320,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 77, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area .single_speaker img {
     float: none;
@@ -2204,6 +2334,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 83, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_event.scss */
   .event_area .single_speaker .speaker-name {
     padding-left: 0;
@@ -2239,7 +2370,7 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer_bg_1 {
-  background-image: url(../img/banner/footer_bg_1.png);
+  background-color: black;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
@@ -2265,6 +2396,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .footer_top {
     padding-top: 60px;
@@ -2273,6 +2405,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 22, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget {
     margin-bottom: 30px;
@@ -2280,6 +2413,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 22, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget {
     margin-bottom: 30px;
@@ -2296,6 +2430,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 29, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget .footer_title {
     margin-bottom: 20px;
@@ -2312,6 +2447,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 39, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget .footer_logo {
     margin-bottom: 20px;
@@ -2440,6 +2576,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 139, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .copy-right_text .copy_right {
     font-size: 14px;
@@ -2457,6 +2594,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 152, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
   .footer .socail_links {
     margin-top: 30px;
@@ -2511,6 +2649,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 10, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_bradcam.scss */
   .breadcam_area .bradcam_text h3 {
     font-size: 30px;
@@ -2518,6 +2657,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 10, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_bradcam.scss */
   .breadcam_area .bradcam_text h3 {
     font-size: 35px;
@@ -2531,6 +2671,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
   .team_area {
     padding-top: 40px;
@@ -2539,6 +2680,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
   .team_area {
     padding-top: 100px;
@@ -2690,7 +2832,8 @@ h3 {
 }
 
 /* line 16, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_contact.scss */
-.contact-info__icon i, .contact-info__icon span {
+.contact-info__icon i,
+.contact-info__icon span {
   color: #8f9195;
   font-size: 27px;
 }
@@ -2812,6 +2955,7 @@ h3 {
 }
 
 @media (max-width: 991px) {
+
   /* line 133, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_contact.scss */
   .contact-section {
     padding: 70px 0 40px;
@@ -2819,6 +2963,7 @@ h3 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 133, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_contact.scss */
   .contact-section {
     padding: 80px 0 50px;
@@ -3551,7 +3696,7 @@ h6 {
 }
 
 /* line 619, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.default-switch input + label {
+.default-switch input+label {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -3568,7 +3713,7 @@ h6 {
 }
 
 /* line 632, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.default-switch input:checked + label {
+.default-switch input:checked+label {
   left: 19px;
 }
 
@@ -3595,7 +3740,7 @@ h6 {
 }
 
 /* line 655, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-switch input + label {
+.primary-switch input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3606,7 +3751,7 @@ h6 {
 }
 
 /* line 663, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-switch input + label:before {
+.primary-switch input+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -3625,7 +3770,7 @@ h6 {
 }
 
 /* line 677, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-switch input + label:after {
+.primary-switch input+label:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -3643,12 +3788,12 @@ h6 {
 }
 
 /* line 693, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-switch input:checked + label:after {
+.primary-switch input:checked+label:after {
   left: 19px;
 }
 
 /* line 696, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-switch input:checked + label:before {
+.primary-switch input:checked+label:before {
   background: #ff5e13;
 }
 
@@ -3675,7 +3820,7 @@ h6 {
 }
 
 /* line 720, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-switch input + label {
+.confirm-switch input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3686,7 +3831,7 @@ h6 {
 }
 
 /* line 728, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-switch input + label:before {
+.confirm-switch input+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -3705,7 +3850,7 @@ h6 {
 }
 
 /* line 742, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-switch input + label:after {
+.confirm-switch input+label:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -3723,12 +3868,12 @@ h6 {
 }
 
 /* line 758, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-switch input:checked + label:after {
+.confirm-switch input:checked+label:after {
   left: 19px;
 }
 
 /* line 761, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-switch input:checked + label:before {
+.confirm-switch input:checked+label:before {
   background: #4cd3e3;
 }
 
@@ -3755,7 +3900,7 @@ h6 {
 }
 
 /* line 785, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-checkbox input + label {
+.primary-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3769,7 +3914,7 @@ h6 {
 }
 
 /* line 798, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-checkbox input:checked + label {
+.primary-checkbox input:checked+label {
   background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -3797,7 +3942,7 @@ h6 {
 }
 
 /* line 822, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-checkbox input + label {
+.confirm-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3811,7 +3956,7 @@ h6 {
 }
 
 /* line 835, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-checkbox input:checked + label {
+.confirm-checkbox input:checked+label {
   background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -3839,7 +3984,7 @@ h6 {
 }
 
 /* line 859, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.disabled-checkbox input + label {
+.disabled-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3859,7 +4004,7 @@ h6 {
 }
 
 /* line 876, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.disabled-checkbox input:checked + label {
+.disabled-checkbox input:checked+label {
   background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -3887,7 +4032,7 @@ h6 {
 }
 
 /* line 900, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-radio input + label {
+.primary-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3901,7 +4046,7 @@ h6 {
 }
 
 /* line 913, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.primary-radio input:checked + label {
+.primary-radio input:checked+label {
   background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -3929,7 +4074,7 @@ h6 {
 }
 
 /* line 937, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-radio input + label {
+.confirm-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3943,7 +4088,7 @@ h6 {
 }
 
 /* line 950, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.confirm-radio input:checked + label {
+.confirm-radio input:checked+label {
   background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -3971,7 +4116,7 @@ h6 {
 }
 
 /* line 974, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.disabled-radio input + label {
+.disabled-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3991,7 +4136,7 @@ h6 {
 }
 
 /* line 991, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.disabled-radio input:checked + label {
+.disabled-radio input:checked+label {
   background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -4162,7 +4307,8 @@ h6 {
 }
 
 /* line 14, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.blog_area a:hover, .blog_area a :hover {
+.blog_area a:hover,
+.blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #0181F5 0%, #0181F5 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -4247,10 +4393,12 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* line 74, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-blog .tag {
     margin-right: 8px;
   }
+
   /* line 98, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-blog .tag:after {
     display: none;
@@ -4263,6 +4411,7 @@ h6 {
 }
 
 @media (max-width: 800px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-blog {
     margin-bottom: 30px;
@@ -4288,6 +4437,7 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* line 112, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-blog .single-blog-content {
     padding: 15px;
@@ -4302,6 +4452,7 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* line 143, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-blog h4 {
     transition: all 300ms linear 0s;
@@ -4309,6 +4460,7 @@ h6 {
     padding-bottom: 14px;
     margin-bottom: 12px;
   }
+
   /* line 149, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-blog h4 a {
     font-size: 18px;
@@ -4332,6 +4484,7 @@ h6 {
 }
 
 @media (min-width: 992px) {
+
   /* line 160, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .full_image.single-blog .single-blog-content {
     bottom: 100px;
@@ -4493,7 +4646,7 @@ h6 {
 }
 
 /* line 358, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.causes_item .causes_bottom a + a {
+.causes_item .causes_bottom a+a {
   border-color: #eeeeee;
   background: #fff;
   font-size: 14px;
@@ -4558,7 +4711,7 @@ h6 {
 }
 
 /* line 431, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.tags .tag_btn + .tag_btn {
+.tags .tag_btn+.tag_btn {
   margin-left: 2px;
 }
 
@@ -4570,6 +4723,7 @@ h6 {
 }
 
 @media (min-width: 900px) {
+
   /* line 438, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_categorie_area {
     padding-top: 80px;
@@ -4578,6 +4732,7 @@ h6 {
 }
 
 @media (min-width: 1100px) {
+
   /* line 438, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_categorie_area {
     padding-top: 120px;
@@ -4656,6 +4811,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 529, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_details {
     padding: 60px 30px 35px 35px;
@@ -4685,6 +4841,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 549, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_details h2 {
     font-size: 24px;
@@ -4748,6 +4905,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 599, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date {
     bottom: -20px;
@@ -4766,6 +4924,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 615, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date h3 {
     font-size: 30px;
@@ -4780,6 +4939,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 627, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date p {
     font-size: 18px;
@@ -4914,7 +5074,7 @@ h6 {
 }
 
 /* line 774, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.blog_right_sidebar .post_category_widget .cat-list li + li {
+.blog_right_sidebar .post_category_widget .cat-list li+li {
   padding-top: 15px;
 }
 
@@ -4946,7 +5106,7 @@ h6 {
 }
 
 /* line 820, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+.blog_right_sidebar .popular_post_widget .post_item+.post_item {
   margin-top: 20px;
 }
 
@@ -5091,9 +5251,25 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 1087, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-post-area .quote-wrapper {
     padding: 30px;
+  }
+}
+
+.logo-img-responsive {
+  max-width: 60px;
+  /* default size for mobile/small devices */
+  height: auto;
+}
+
+@media (min-width: 992px) {
+
+  /* for desktops and large screens */
+  .logo-img-responsive {
+    max-width: 120px;
+    /* slightly bigger on desktop */
   }
 }
 
@@ -5104,12 +5280,145 @@ h6 {
   border-left: 2px solid;
 }
 
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* space between logos */
+}
+
+.site-branding .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  width: 60px;
+  /* smaller size, adjust as needed */
+  height: auto;
+  margin-right: 8px;
+  /* space between image and text */
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  white-space: nowrap;
+  color: white;
+}
+
+.header-area .row.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
+
   /* line 1101, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-post-area .quotes {
     padding: 25px 25px 25px 30px;
   }
 }
+
+.slider_area .slider_text {
+  margin-bottom: 0px;
+  /* reduce bottom margin */
+  padding-bottom: 0;
+  /* reduce padding if any */
+}
+
+.slider_area .countDOwn_area {
+  margin-top: 10px;
+  /* reduce top margin */
+  padding-top: 0;
+}
+
+.logo-img {
+  width: 40px;
+  /* base size for small screens */
+  height: auto;
+  margin-right: 8px;
+  transition: width 0.3s ease;
+}
+
+/* Medium screens and up */
+@media (min-width: 768px) {
+  .logo-img {
+    width: 60px;
+  }
+}
+
+/* Large screens and up */
+@media (min-width: 1200px) {
+  .logo-img {
+    width: 80px;
+  }
+}
+
+/* Optional: adjust text size similarly */
+.logo-text {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: font-size 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .logo-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
+.logo-img {
+  width: 40px;
+  /* base size for small screens */
+  height: auto;
+  margin-right: 8px;
+  transition: width 0.3s ease;
+}
+
+/* Medium screens and up */
+@media (min-width: 768px) {
+  .logo-img {
+    width: 60px;
+  }
+}
+
+/* Large screens and up */
+@media (min-width: 1200px) {
+  .logo-img {
+    width: 80px;
+  }
+}
+
+/* Optional: adjust text size similarly */
+.logo-text {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: font-size 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .logo-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
 
 /* line 1111, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
 .single-post-area .arrow {
@@ -5188,6 +5497,7 @@ h6 {
 }
 
 @media (max-width: 600px) {
+
   /* line 1182, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-post-area .blog-author {
     padding: 20px 8px;
@@ -5203,6 +5513,7 @@ h6 {
 }
 
 @media (max-width: 600px) {
+
   /* line 1191, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-post-area .blog-author img {
     margin-right: 15px;
@@ -5286,6 +5597,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1240, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-post-area .navigation-area .nav-left {
     margin-bottom: 30px;
@@ -5328,6 +5640,7 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
   /* line 1307, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px;
@@ -5343,6 +5656,7 @@ h6 {
 }
 
 @media (max-width: 414px) {
+
   /* line 1314, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .comments-area {
     padding: 50px 8px;
@@ -5377,14 +5691,17 @@ h6 {
 }
 
 @media (max-width: 413px) {
+
   /* line 1354, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .comments-area .comment-list .single-comment h5 {
     font-size: 12px;
   }
+
   /* line 1358, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .comments-area .comment-list .single-comment .date {
     font-size: 11px;
   }
+
   /* line 1362, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .comments-area .comment-list .single-comment .comment {
     font-size: 10px;
@@ -5453,6 +5770,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1428, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .comment-form .name {
     padding-right: 0px;
@@ -5466,6 +5784,7 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
   /* line 1437, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog.scss */
   .comment-form .email {
     padding-left: 0px;
@@ -5542,6 +5861,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 2, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part {
     margin-bottom: 0px;
@@ -5550,6 +5870,7 @@ h6 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* line 2, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part {
     margin-bottom: 0px;
@@ -5558,6 +5879,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 2, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part {
     margin-bottom: 0px;
@@ -5573,6 +5895,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog {
     margin-bottom: 140px;
@@ -5581,6 +5904,7 @@ h6 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog {
     margin-bottom: 140px;
@@ -5589,6 +5913,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 24, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog {
     margin-bottom: 140px;
@@ -5621,6 +5946,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 48, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
     padding: 15px;
@@ -5630,6 +5956,7 @@ h6 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* line 48, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
     padding: 15px;
@@ -5639,6 +5966,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 48, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
     padding: 20px;
@@ -5687,6 +6015,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -5695,6 +6024,7 @@ h6 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -5703,6 +6033,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -5711,6 +6042,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -5730,6 +6062,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 119, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -5737,6 +6070,7 @@ h6 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* line 119, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -5745,6 +6079,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 119, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -5752,6 +6087,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 119, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -5777,6 +6113,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -5784,6 +6121,7 @@ h6 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -5791,6 +6129,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -5798,6 +6137,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -5809,5 +6149,41 @@ h6 {
   margin-right: 10px;
   font-size: 12px;
 }
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* smaller gap for mobile by default */
+}
+
+@media (min-width: 768px) {
+  .site-branding {
+    gap: 20px;
+    /* more space on tablets and up */
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-branding {
+    gap: 30px;
+    /* even more space on large desktops */
+  }
+}
+
+.copy_right.text-center {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  /* optional spacing */
+}
+
+.copy-right_text a.copy_right:hover {
+  text-decoration: underline;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */

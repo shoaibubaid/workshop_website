@@ -572,11 +572,12 @@ h3 {
 .section_title .sub_heading {
   color: #c9c9c9;
   display: block;
-  font-size: 15px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   margin-bottom: 22px;
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1122,7 +1123,7 @@ h3 {
 
 .slider_bg_1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                    url(../img/banner/banner_2.png);
+    url(../img/banner/banner_2.png);
   background-size: cover;
   background-position: center;
 }
@@ -6190,7 +6191,10 @@ h6 {
   text-decoration: underline;
 }
 
-
+.about_area {
+  display: flex;
+  justify-content: center;
+}
 
 
 /*# sourceMappingURL=style.css.map */
